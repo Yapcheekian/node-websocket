@@ -18,7 +18,7 @@ io.on('connection', (socket) => {
     console.log('New user connected');
 
     // socket.emit from Admin text Welcome to the chat App
-    socket.emit('newMessage', generateMessage('老公大人', '520快乐唷'));
+    socket.emit('newMessage', generateMessage('Katherine', 'Welcome'));
 
     // socket.broadcast.emit from Admin text New user joined
     socket.broadcast.emit('newMessage', generateMessage('系统信息', 'New user joined'));
